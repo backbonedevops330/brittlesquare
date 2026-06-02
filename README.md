@@ -1,4 +1,4 @@
-# inspector-8b2130
+# inspector-ba052c
 
 A Python inspector utility.
 

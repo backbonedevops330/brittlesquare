@@ -1,7 +1,7 @@
-"""inspector_8b2130 - Configuration manager."""
+"""inspector_ba052c - Configuration manager."""
 import os, json
 from dataclasses import dataclass, asdict
-COMPONENT = "inspector_8b2130"
+COMPONENT = "inspector_ba052c"
 @dataclass
 class AppConfig:
     name: str = COMPONENT

